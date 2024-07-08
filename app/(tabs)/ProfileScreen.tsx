@@ -13,7 +13,7 @@ type Props = {
 
 type Profile = {
   email: string;
-  // Add more profile fields as needed
+  // todo : add more fields here 
 };
 
 const ProfileScreen: React.FC<Props> = ({ navigation }) => {
@@ -22,7 +22,7 @@ const ProfileScreen: React.FC<Props> = ({ navigation }) => {
   useEffect(() => {
     const fetchProfile = async () => {
       const token = await AsyncStorage.getItem('token');
-      const response = await axios.get('YOUR_API_ENDPOINT/profile', { headers: { Authorization: `Bearer ${token}` } });
+      const response = await axios.get('/profile', { headers: { Authorization: `Bearer ${token}` } });
       setProfile(response.data);
     };
     fetchProfile();
