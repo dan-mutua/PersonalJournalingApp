@@ -9,10 +9,7 @@ This is a React Native app for managing journal entries, including features like
 - [Installation](#installation)
 - [Running the App](#running-the-app)
 - [Environment Variables](#environment-variables)
-- [Folder Structure](#folder-structure)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
